@@ -1,5 +1,5 @@
 #
-# Copyright 2012 The Android Open Source Project
+# Copyright 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,17 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_flo.mk \
-    $(LOCAL_DIR)/full_flo.mk \
-    $(LOCAL_DIR)/raindrop_flo.mk
+# Recovery pixel format
+TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+
+# TWRP config
+TW_THEME := portrait_hdpi
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_SDCARD_ON_DATA := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_NO_SCREEN_BLANK := true
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_CRYPTO := true
+TW_CUSTOM_POWER_BUTTON := 107
+TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.591617/leds/lcd-backlight/brightness
+TW_MAX_BRIGHTNESS := 255
