@@ -50,7 +50,8 @@ PRODUCT_COPY_FILES += \
 	device/asus/flo/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
 	device/asus/flo/WCNSS_qcom_wlan_nv_flo.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_flo.bin \
 	device/asus/flo/WCNSS_qcom_wlan_nv_deb.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_deb.bin \
-	device/asus/flo/init.flo.wifi.sh:system/bin/init.flo.wifi.sh
+	device/asus/flo/init.flo.wifi.sh:system/bin/init.flo.wifi.sh \
+	device/asus/flo/twrp.fstab:recovery/root/etc/twrp.fstab
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/audio_policy.conf:system/etc/audio_policy.conf
